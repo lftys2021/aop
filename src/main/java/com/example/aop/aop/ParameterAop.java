@@ -34,5 +34,6 @@ public class ParameterAop {
     @AfterReturning(value = "cut()", returning = "returnObj")
     public void afterReturn(JoinPoint joinPoint, Object retrunObj){
         System.out.println("return Object : " + retrunObj);
+        System.out.println(retrunObj);
     }
 }
